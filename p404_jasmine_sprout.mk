@@ -19,8 +19,7 @@ $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
 # Inherit some common stuff from Project-Awaken
 AWAKEN_BUILD_TYPE := OFFICIAL
-$(call inherit-product, vendor/awaken/config/common.mk)
-$(call inherit-product, vendor/awaken/config/gsm.mk)
+$(call inherit-product, vendor/404/configs/common.mk)
 
 # Gapps
 USE_GAPPS := true
@@ -42,9 +41,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := awaken_jasmine_sprout
+PRODUCT_NAME := p404_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
+P404_BUILDTYPE := RIPPA
 
 # TWRP Support
 BUILD_TWRP := true
